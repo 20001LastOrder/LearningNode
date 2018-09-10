@@ -1,11 +1,11 @@
 var interval = setInterval(function(name){
 	console.log('hello ' + name);
-}, 3000, 'Percy')
+}, 300, 'Percy')
 
 var timer = setTimeout(function(name, interval){
-	clearInterval(interval);
+	interval.unref();
 	console.log('Bye' + name);
-}, 30000, 'Percy', interval);
+}, 700, 'Percy', interval);
 
 timer.unref();
 
