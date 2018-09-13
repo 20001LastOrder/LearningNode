@@ -5,7 +5,7 @@ var counter = 0;
 
 var writeStream = fs.createWriteStream('./log.txt',
 {
-	'flags': 'a',
+	'flags': 'w',
 	'encoding': encoding,
 	'mode': '0666'
 });
